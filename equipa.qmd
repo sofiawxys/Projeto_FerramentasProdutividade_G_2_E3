@@ -1,0 +1,15 @@
+---
+title: "Equipa de Investigação"
+---
+
+O projeto MindMove é desenvolvido por:
+
+-   **Ana Sofia Moreira**
+
+-   **Flávio Vieira**
+
+-   **Gabriela Carneiro**
+
+-   **Maria Leonor Fernandes**
+
+Faculdade de Medicina da Universidade do Porto

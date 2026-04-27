@@ -1,0 +1,11 @@
+---
+title: "Resultados Preliminares"
+---
+
+Em breve esta página terá:
+
+-   Análise descritiva da amostra
+
+-   Comparação entre grupos (controlo VS intervenção)
+
+-   Gráficos de evolução do PHQ-9

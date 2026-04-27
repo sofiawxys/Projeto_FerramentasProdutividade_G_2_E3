@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "resultados.html",
+    "href": "resultados.html",
+    "title": "Resultados Preliminares",
+    "section": "",
+    "text": "Em breve esta página terá:\n\nAnálise descritiva da amostra\nComparação entre grupos (controlo VS intervenção)\nGráficos de evolução do PHQ-9"
+  },
+  {
+    "objectID": "materiais.html",
+    "href": "materiais.html",
+    "title": "Materiais e Métodos",
+    "section": "",
+    "text": "[Aqui será inserido o link para o protótipo interativo]"
+  },
+  {
+    "objectID": "materiais.html#protótipo-mindmove",
+    "href": "materiais.html#protótipo-mindmove",
+    "title": "Materiais e Métodos",
+    "section": "",
+    "text": "[Aqui será inserido o link para o protótipo interativo]"
+  },
+  {
+    "objectID": "materiais.html#instrumentos-de-recolha",
+    "href": "materiais.html#instrumentos-de-recolha",
+    "title": "Materiais e Métodos",
+    "section": "Instrumentos de Recolha",
+    "text": "Instrumentos de Recolha\n\nPHQ-9: Para avaliação da depressão.\nSUS (System Usability Scale): Para medir a usabilidade da app.\nWHO-5: Para bem-estar geral."
+  },
+  {
+    "objectID": "equipa.html",
+    "href": "equipa.html",
+    "title": "Equipa de Investigação",
+    "section": "",
+    "text": "O projeto MindMove é desenvolvido por:\n\nAna Sofia Moreira\nFlávio Vieira\nGabriela Carneiro\nMaria Leonor Fernandes\n\nFaculdade de Medicina da Universidade do Porto"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ensaio MindMove",
+    "section": "",
+    "text": "Bem-vindos ao Projeto MindMove!\nEste site apresenta o protocolo e os resultados preliminares do ensaio clínico focado na redução da sintomatologia depressiva em estudantes universitários através da aplicação MindMove.\nO nosso objetivo é testar a viabilidade de uma intervenção digital de Terapia Cognitivo-Comportamental (dCBT).\nNota: Este ensaio clínico não foi, nem será, realmente realizado, tratando-se meramente de um projeto académico."
+  },
+  {
+    "objectID": "protocolo.html",
+    "href": "protocolo.html",
+    "title": "Protocolo do Estudo",
+    "section": "",
+    "text": "O ensaio MindMove foca-se em estudantes (18-30 anos) com sintomas depressivos ligeiros a moderados (PHQ-9 entre 5 e 14).\n\n\n\nEstudantes universitários\nPontuação PHQ-9 entre 5 e14\nPosse de smartphone com acesso à Internet\n\n\n\n\nO estudo utiliza um desenho de ensaio clínico randomizado (RCT) piloto com \\(n=30\\) participantes, divididos entre o grupo de intervenção (App MindMove) e o grupo de controlo (Standard of Care)."
+  },
+  {
+    "objectID": "protocolo.html#resumo-do-protocolo",
+    "href": "protocolo.html#resumo-do-protocolo",
+    "title": "Protocolo do Estudo",
+    "section": "",
+    "text": "O ensaio MindMove foca-se em estudantes (18-30 anos) com sintomas depressivos ligeiros a moderados (PHQ-9 entre 5 e 14).\n\n\n\nEstudantes universitários\nPontuação PHQ-9 entre 5 e14\nPosse de smartphone com acesso à Internet\n\n\n\n\nO estudo utiliza um desenho de ensaio clínico randomizado (RCT) piloto com \\(n=30\\) participantes, divididos entre o grupo de intervenção (App MindMove) e o grupo de controlo (Standard of Care)."
+  }
+]

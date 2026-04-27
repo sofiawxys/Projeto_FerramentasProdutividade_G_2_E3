@@ -1,0 +1,15 @@
+---
+title: "Materiais e Métodos"
+---
+
+## Protótipo MindMove
+
+\[Aqui será inserido o link para o protótipo interativo\]
+
+## Instrumentos de Recolha
+
+-   **PHQ-9:** Para avaliação da depressão.
+
+-   **SUS (System Usability Scale):** Para medir a usabilidade da app.
+
+-   **WHO-5:** Para bem-estar geral.

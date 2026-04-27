@@ -1,0 +1,11 @@
+---
+title: "Ensaio MindMove"
+---
+
+# Bem-vindos ao Projeto MindMove!
+
+Este site apresenta o protocolo e os resultados preliminares do ensaio clínico focado na redução da sintomatologia depressiva em estudantes universitários através da aplicação **MindMove**.
+
+O nosso objetivo é testar a viabilidade de uma intervenção digital de Terapia Cognitivo-Comportamental (dCBT).
+
+Nota: Este ensaio clínico não foi, nem será, realmente realizado, tratando-se meramente de um projeto académico.

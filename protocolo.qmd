@@ -1,0 +1,19 @@
+---
+title: "Protocolo do Estudo"
+---
+
+## Resumo do Protocolo
+
+O ensaio **MindMove** foca-se em estudantes (18-30 anos) com sintomas depressivos ligeiros a moderados (PHQ-9 entre 5 e 14).
+
+### Critérios de Inclusão
+
+-   Estudantes universitários
+
+-   Pontuação PHQ-9 entre 5 e14
+
+-   Posse de smartphone com acesso à Internet
+
+### Metodologia
+
+O estudo utiliza um desenho de ensaio clínico randomizado (RCT) piloto com $n=30$ participantes, divididos entre o grupo de intervenção (App MindMove) e o grupo de controlo (Standard of Care).
