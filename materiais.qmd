@@ -1,15 +1,11 @@
 ---
-title: "Materiais e Métodos"
+title: "Materiais"
 ---
 
-## Protótipo MindMove
+## CRF
 
-\[Aqui será inserido o link para o protótipo interativo\]
+::: callout-tip
+## Material Disponível para download
 
-## Instrumentos de Recolha
-
--   **PHQ-9:** Para avaliação da depressão.
-
--   **SUS (System Usability Scale):** Para medir a usabilidade da app.
-
--   **WHO-5:** Para bem-estar geral.
+**Case Report Form** utilizado (completo): [Descarregar o CRF (PDF)](ficheiros/crf_mindmove.pdf) **Relatório de desenvolvimento do eCRF em RedCap**: [Descarregar o relatório (PDF)](ficheiros/relatorio_crf.pdf)
+:::
