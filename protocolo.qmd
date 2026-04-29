@@ -65,7 +65,7 @@ Acompanhamento clínico convencional do SNS e entrega de um folheto informativo 
 ![Fluxograma CONSORT](ficheiros/fluxograma_consort.jpg)
 
 | Fase | Duração | Descrição |
-|:---|:---|:---|
+|:-----------------------|:-----------------------|:-----------------------|
 | **Recrutamento** | Semanas -2 a 0 | Divulgação digital e física; triagem online (Informed Consent + PHQ-9). |
 | **Baseline (T0)** | Dia 0 | Avaliação completa (PHQ-9, GAD-7, PSQI); Randomização automatizada. |
 | **Intervenção** | Semanas 1-8 | **Grupo I:** Uso da App MindMove (protocolo 3x/semana). **Grupo C:** Acesso a brochuras PDF sobre higiene do sono e saúde mental. |
