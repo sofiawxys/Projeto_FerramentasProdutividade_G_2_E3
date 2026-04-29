@@ -32,7 +32,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Projeto Académico para a Unidade Curricular de Ferramentas da Produtividade (Licenciatura SauDInoB, FMUP)\nAno letivo de 2025/2026\nRealizado por Ana Sofia Moreira, Flávio Vieira, Gabriela Carneiro e Maria Leonor Fernandes (Turma A, Cenário MindMove)\nNota: Esta não é a versão final do projeto, estando sujeita a alterações."
+    "text": "Projeto Académico para a Unidade Curricular de Ferramentas da Produtividade (Licenciatura SauDInoB, FMUP).\nAno letivo de 2025/2026.\nRealizado por Ana Sofia Moreira, Flávio Vieira, Gabriela Carneiro e Maria Leonor Fernandes (Turma A, Cenário MindMove).\nNota: Esta não é a versão final do projeto, estando sujeita a alterações."
   },
   {
     "objectID": "index.html",
@@ -46,13 +46,48 @@
     "href": "protocolo.html",
     "title": "Protocolo do Estudo",
     "section": "",
-    "text": "O ensaio MindMove foca-se em estudantes (18-30 anos) com sintomas depressivos ligeiros a moderados (PHQ-9 entre 5 e 14).\n\n\n\nEstudantes universitários\nPontuação PHQ-9 entre 5 e14\nPosse de smartphone com acesso à Internet\n\n\n\n\nO estudo utiliza um desenho de ensaio clínico randomizado (RCT) piloto com \\(n=30\\) participantes, divididos entre o grupo de intervenção (App MindMove) e o grupo de controlo (Standard of Care)."
+    "text": "Nesta página apresentamos a estrutura clínica e metodológica do ensaio MindMove.\n\n\n\n\n\n\nTipMaterial Disponível para download\n\n\n\nDocumento Completo: (documento integral com todas as referências bibliográficas): Descarregar o Protocolo (PDF)."
   },
   {
     "objectID": "protocolo.html#resumo-do-protocolo",
     "href": "protocolo.html#resumo-do-protocolo",
     "title": "Protocolo do Estudo",
     "section": "",
-    "text": "O ensaio MindMove foca-se em estudantes (18-30 anos) com sintomas depressivos ligeiros a moderados (PHQ-9 entre 5 e 14).\n\n\n\nEstudantes universitários\nPontuação PHQ-9 entre 5 e14\nPosse de smartphone com acesso à Internet\n\n\n\n\nO estudo utiliza um desenho de ensaio clínico randomizado (RCT) piloto com \\(n=30\\) participantes, divididos entre o grupo de intervenção (App MindMove) e o grupo de controlo (Standard of Care)."
+    "text": "Nesta página apresentamos a estrutura clínica e metodológica do ensaio MindMove.\n\n\n\n\n\n\nTipMaterial Disponível para download\n\n\n\nDocumento Completo: (documento integral com todas as referências bibliográficas): Descarregar o Protocolo (PDF)."
+  },
+  {
+    "objectID": "protocolo.html#introdução-e-racional",
+    "href": "protocolo.html#introdução-e-racional",
+    "title": "Protocolo do Estudo",
+    "section": "1. Introdução e Racional",
+    "text": "1. Introdução e Racional\nA transição para o ensino superior é um período de vulnerabilidade crítica. O MindMove visa preencher a lacuna de suporte em saúde mental, oferecendo uma solução digital (mHealth) baseada em Terapia Cognitivo-Comportamental digital (dCBT) com monitorização de estilos de vida (sono e atividade física) para estudantes universitários com sintomas depressivos ligeiros a moderados (PHQ-9 entre 5-14).\n\nObjetivos Principais\n\nPrimário: Avaliar a eficácia da app na redução dos sintomas depressivos (escala PHQ-9) ao fim de 8 semanas, face a um grupo de controlo.\nSecundários: Avaliar ansiedade (GAD-7), qualidade do sono (PSQI), atividade física, viabilidade, adesão e usabilidade (SUS)."
+  },
+  {
+    "objectID": "protocolo.html#métodos-e-desenho-do-estudo",
+    "href": "protocolo.html#métodos-e-desenho-do-estudo",
+    "title": "Protocolo do Estudo",
+    "section": "2. Métodos e Desenho do Estudo",
+    "text": "2. Métodos e Desenho do Estudo\nO estudo configura-se como um ensaio clínico controlado e randomizado (RCT), de grupos paralelos (1:1), com 30 participantes, a realizar no Serviço de Psicologia da Universidade do Porto. A duração da intervenção é de 8 semanas.\n\nCritérios de Inclusão (Resumo)\n\nIdade 18-30 anos, estudantes universitários ativos.\nPHQ-9 entre 5 e 14 (sintomas ligeiros a moderados).\nPosse de smartphone com internet e capacidade para usar a app.\n\n\n\nCritérios de Exclusão (Resumo)\n\nDiagnóstico de Depressão Major ou patologias graves.\nToma atual de antidepressivos ou ideação suicida ativa (PHQ-9 item 9 \\(\\ge\\) 1)."
+  },
+  {
+    "objectID": "protocolo.html#intervenções",
+    "href": "protocolo.html#intervenções",
+    "title": "Protocolo do Estudo",
+    "section": "3. Intervenções",
+    "text": "3. Intervenções\n\nGrupo de Intervenção (App MindMove)\nOs participantes utilizam a aplicação para:\n\nMonitorização Ativa: Registo diário de humor e sinais vitais.\nSistema de Alertas: Feedback e notificações em tempo real.\nConteúdo educativo: Guias de gestão de saúde mental.\n\n\n\nGrupo Controlo (Standard of Care)\nAcompanhamento clínico convencional do SNS e entrega de um folheto informativo em papel com recomendações gerais no início do estudo."
+  },
+  {
+    "objectID": "protocolo.html#fluxo-esperado-do-estudo",
+    "href": "protocolo.html#fluxo-esperado-do-estudo",
+    "title": "Protocolo do Estudo",
+    "section": "4. Fluxo esperado do Estudo",
+    "text": "4. Fluxo esperado do Estudo\n(Abaixo encontra-se a progressão esperada dos participantes no ensaio)\n\n\n\nFluxograma CONSORT\n\n\n\n\n\n\n\n\n\n\nFase\nDuração\nDescrição\n\n\n\n\nRecrutamento\nSemanas -2 a 0\nDivulgação digital e física; triagem online (Informed Consent + PHQ-9).\n\n\nBaseline (T0)\nDia 0\nAvaliação completa (PHQ-9, GAD-7, PSQI); Randomização automatizada.\n\n\nIntervenção\nSemanas 1-8\nGrupo I: Uso da App MindMove (protocolo 3x/semana). Grupo C: Acesso a brochuras PDF sobre higiene do sono e saúde mental.\n\n\nMid-term (T1)\nSemana 4\nAvaliação intermédia de segurança, adesão e sintomas (PHQ-9).\n\n\nPost-test (T2)\nSemana 8\nAvaliação final de todos os outcomes primários e secundários.\n\n\nFollow-up\nSemana 12\n(Opcional) Avaliação de manutenção de ganhos após término da intervenção."
+  },
+  {
+    "objectID": "protocolo.html#ética-e-segurança",
+    "href": "protocolo.html#ética-e-segurança",
+    "title": "Protocolo do Estudo",
+    "section": "5. Ética e Segurança",
+    "text": "5. Ética e Segurança\nO protocolo garante total conformidade com o RGPD (dados encriptados e anonimizados) e inclui um Protocolo de Resgate: se um participante pontuar ideação suicida ou agravamento severo, a equipa clínica recebe um alerta imediato para contacto em 24 horas."
   }
 ]
