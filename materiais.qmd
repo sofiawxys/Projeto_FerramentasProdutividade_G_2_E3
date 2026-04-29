@@ -7,5 +7,7 @@ title: "Materiais"
 ::: callout-tip
 ## Material Disponível para download
 
-**Case Report Form** utilizado (completo): [Descarregar o CRF (PDF)](ficheiros/crf_mindmove.pdf) **Relatório de desenvolvimento do eCRF em RedCap**: [Descarregar o relatório (PDF)](ficheiros/relatorio_crf.pdf)
+**Case Report Form** utilizado (completo): [Descarregar o CRF (PDF)](ficheiros/crf_mindmove.pdf)
+
+**Relatório de desenvolvimento do eCRF em RedCap**: [Descarregar o relatório (PDF)](ficheiros/relatorio_crf.pdf)
 :::
