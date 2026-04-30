@@ -2,10 +2,19 @@
 title: "Ensaio MindMove"
 ---
 
-# Bem-vindos ao Projeto MindMove!
+# Bem-vindos ao MindMove!
 
-Este site apresenta o protocolo e os resultados preliminares do ensaio clínico focado na redução da sintomatologia depressiva em estudantes universitários através da aplicação **MindMove**.
+A transição para o ensino superior é um período crítico que exige adaptação, o que pode aumentar a vulnerabilidade a desafios de saúde mental.
 
-O nosso objetivo é testar a viabilidade de uma intervenção digital de Terapia Cognitivo-Comportamental (dCBT).
+O **MindMove** é um ensaio clínico randomizado (RCT) focado em avaliar a viabilidade e a eficácia de uma intervenção digital multimodal, baseada em Terapia Cognitivo-Comportamental (dCBT) e monitorização de estilos de vida, para a redução de sintomas depressivos em estudantes universitários.
 
-Nota: Este ensaio clínico não foi, nem será, realmente realizado, tratando-se meramente de um projeto académico.
+### O que podem encontrar neste website?
+
+Criámos este espaço para documentar de forma transparente todas as fases do nosso ensaio clínico. Utilize o menu de navegação no topo da página para explorar as seguintes secções:
+
+-   **Protocolo:** O desenho detalhado do estudo, incluindo os critérios de elegibilidade, detalhes sobre a intervenção e o fluxograma (CONSORT) do estudo.
+-   **Materiais:** Os instrumentos utilizados na recolha e gestão segura dos dados clínico, como o CRF.
+-   **Resultados:** A análise estatística dos dados recolhidos, incluindo a comparação das características basais da amostra e a avaliação do *outcome* primário (escala PHQ-9).
+-   **Equipa:** Os investigadores responsáveis pela condução deste projeto.
+
+------------------------------------------------------------------------

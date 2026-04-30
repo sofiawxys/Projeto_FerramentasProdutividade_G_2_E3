@@ -132,7 +132,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#crf" id="toc-crf" class="nav-link active" data-scroll-target="#crf">CRF</a></li>
+  <li><a href="#materiais-utilizados-para-o-estudo" id="toc-materiais-utilizados-para-o-estudo" class="nav-link active" data-scroll-target="#materiais-utilizados-para-o-estudo">Materiais utilizados para o estudo</a></li>
+  <li><a href="#dicionário-de-dados-e-plataforma-redcap" id="toc-dicionário-de-dados-e-plataforma-redcap" class="nav-link" data-scroll-target="#dicionário-de-dados-e-plataforma-redcap">1. Dicionário de Dados e Plataforma REDCap</a></li>
+  <li><a href="#estrutura-modular-do-ecrf" id="toc-estrutura-modular-do-ecrf" class="nav-link" data-scroll-target="#estrutura-modular-do-ecrf">2. Estrutura Modular do eCRF</a></li>
+  <li><a href="#implementação-e-controlo-de-qualidade" id="toc-implementação-e-controlo-de-qualidade" class="nav-link" data-scroll-target="#implementação-e-controlo-de-qualidade">3. Implementação e Controlo de Qualidade</a></li>
+  <li><a href="#protocolo-de-segurança-e-alertas-clínicos" id="toc-protocolo-de-segurança-e-alertas-clínicos" class="nav-link" data-scroll-target="#protocolo-de-segurança-e-alertas-clínicos">4. Protocolo de Segurança e Alertas Clínicos</a></li>
   </ul>
 </nav>
     </div>
@@ -158,8 +162,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="crf" class="level2">
-<h2 class="anchored" data-anchor-id="crf">CRF</h2>
+<section id="materiais-utilizados-para-o-estudo" class="level2">
+<h2 class="anchored" data-anchor-id="materiais-utilizados-para-o-estudo">Materiais utilizados para o estudo</h2>
+<p>Nesta página disponibilizamos os materiais utilizados para a recolha e gestão dos dados clínicos do estudo <strong>MindMove</strong>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -172,8 +177,47 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-body-container callout-body">
 <p><strong>Case Report Form</strong> utilizado (completo): <a href="ficheiros/crf_mindmove.pdf">Descarregar o CRF (PDF)</a></p>
 <p><strong>Relatório de desenvolvimento do eCRF em RedCap</strong>: <a href="ficheiros/relatorio_crf.pdf">Descarregar o relatório (PDF)</a></p>
+<p><strong>Dicionário de Dados</strong> (exportado do RedCap): <a href="ficheiros/dicionario_dados">Descarregar o dicionário de dados (CSV)</a></p>
 </div>
 </div>
+<p>Nesta secção, apresentamos os instrumentos e ferramentas utilizados para a estruturação, recolha de dados e implementação da intervenção do estudo <strong>MindMove</strong>.</p>
+</section>
+<section id="dicionário-de-dados-e-plataforma-redcap" class="level2">
+<h2 class="anchored" data-anchor-id="dicionário-de-dados-e-plataforma-redcap">1. Dicionário de Dados e Plataforma REDCap</h2>
+<p>A base de toda a recolha de dados foi sustentada pela criação prévia de um <strong>Dicionário de Dados</strong>, garantindo a padronização e comparabilidade das variáveis. A partir deste dicionário, o nosso <em>electronic Case Report Form</em> (eCRF) foi construído e implementado na plataforma <strong>REDCap</strong>.</p>
+<p>A escolha do REDCap permitiu-nos aplicar validações automáticas e lógica condicional, minimizando erros humanos e otimizando a experiência quer dos investigadores, quer dos participantes.</p>
+<hr>
+</section>
+<section id="estrutura-modular-do-ecrf" class="level2">
+<h2 class="anchored" data-anchor-id="estrutura-modular-do-ecrf">2. Estrutura Modular do eCRF</h2>
+<p>O eCRF foi dividido em 4 instrumentos independentes para facilitar a gestão de dados nos diferentes momentos do estudo clínico:</p>
+<ol type="1">
+<li><strong>Identificação e Triagem:</strong> Valida os critérios de elegibilidade (idade, estatuto de estudante, acessos tecnológicos e critérios clínicos de exclusão) e assegura a formalização do Consentimento Informado.</li>
+<li><strong>Outcome Primário:</strong> Focado exclusivamente na aplicação da escala PHQ-9. Este isolamento garante que a monitorização da depressão seja tratada com prioridade máxima.</li>
+<li><strong>Outcomes Secundários:</strong> Agrupa as escalas de ansiedade (GAD-7), bem-estar (WHO-5) e qualidade do sono (PSQI). Para reduzir o tempo de preenchimento, utilizámos o formato de matriz de dados (grelhas), uniformizando a resposta.</li>
+<li><strong>Usabilidade e Adesão da App:</strong> Aplicado no final da intervenção, inclui a escala SUS e métricas de atividade semanal, cruzando a eficácia terapêutica com a proficiência técnica da aplicação MindMove.</li>
+</ol>
+<hr>
+</section>
+<section id="implementação-e-controlo-de-qualidade" class="level2">
+<h2 class="anchored" data-anchor-id="implementação-e-controlo-de-qualidade">3. Implementação e Controlo de Qualidade</h2>
+<p>Para garantir a integridade dos dados e a proteção do participante, implementámos um conjunto de regras técnicas avançadas no REDCap:</p>
+<ul>
+<li><strong>Ocultação de Variáveis e Cálculos Automáticos:</strong> O processamento das escalas (ex: PHQ-9) utiliza <em>Calculated Fields</em> para evitar erros de soma manual. Utilizámos a Action Tag <code>@HIDDEN-SURVEY</code> para que os scores finais sejam calculados em tempo real, mas permaneçam invisíveis para o participante, evitando enviesamentos ou impacto psicológico imediato.</li>
+<li><strong>Política de Missing Data:</strong> Todos os campos relativos a <em>outcomes</em> primários, secundários, demografia e elegibilidade foram marcados como de preenchimento obrigatório.</li>
+<li><strong>Regras de Validação:</strong> Abertura de campos restrita. Por exemplo, a variável “Idade” só aceita números inteiros entre 18 e 30 anos.</li>
+<li><strong>Triagem Automatizada:</strong> Aplicação de <em>Branching Logic</em> na fase de triagem. Se o participante não consentir ou revelar um diagnóstico prévio impeditivo, o sistema encerra o inquérito e informa imediatamente a não elegibilidade.</li>
+</ul>
+<hr>
+</section>
+<section id="protocolo-de-segurança-e-alertas-clínicos" class="level2">
+<h2 class="anchored" data-anchor-id="protocolo-de-segurança-e-alertas-clínicos">4. Protocolo de Segurança e Alertas Clínicos</h2>
+<p>Dada a sensibilidade do estudo na área da saúde mental, o eCRF foi configurado com uma dupla camada de resposta automática de segurança para casos de risco (ex: deteção de ideação suicida no item 9 do PHQ-9 ou <em>score</em> total &gt; 20):</p>
+<ol type="1">
+<li><strong>Apoio Imediato ao Participante:</strong> Através de <em>Branching Logic</em>, o sistema exibe imediatamente uma mensagem com contactos de emergência e linhas de apoio (ex: SNS 24, SOS Estudante).</li>
+<li><strong>Alerta à Equipa de Investigação:</strong> O módulo <em>Alerts &amp; Notifications</em> dispara um e-mail em tempo real para os investigadores, permitindo a ativação imediata do protocolo de resgate.</li>
+</ol>
+<hr>
 
 
 </section>
