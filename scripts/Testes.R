@@ -22,7 +22,8 @@ tabela1 <- dados |>
       idade ~ "Idade (anos)",
       sexo ~ "Género",
       phq9_baseline ~ "PHQ-9 Inicial"
-    )
+    ),
+    digits = all_continuous() ~ 1
   )|> 
   add_overall() |> 
   add_p()
@@ -38,7 +39,8 @@ dados |>
     colour = grupo)) +
   geom_boxplot(
     outlier.shape = NA, 
-    width = 0.4
+    width = 0.4,
+    linewidth = 0.7
     ) +
   geom_jitter(
     width = 0.12, 
@@ -50,6 +52,9 @@ dados |>
       "intervencao" = "#2C3E50",
       "controlo"    = "#7A9B9E"
     )
+  )+
+  scale_x_discrete(
+    labels = c("intervencao" = "Intervenção", "controlo" = "Controlo")
   )+
   labs(
     title = "Resultado MindMove: Score PHQ-9 às 8 semanas",
@@ -87,21 +92,23 @@ tabela1 <- dados |>
       idade ~ "Idade (anos)",
       sexo ~ "Género",
       phq9_baseline ~ "PHQ-9 Inicial"
-    )
+    ),
+    digits = all_continuous() ~ 1
   )|> 
   add_overall() |> 
   add_p()
 
 
 # ---- 3. Gráfico do Outcome Primário----
-ddados |> 
+dados |> 
   ggplot(aes(
     x = grupo, 
     y = phq9_semana8, 
     colour = grupo)) +
   geom_boxplot(
     outlier.shape = NA, 
-    width = 0.4
+    width = 0.4,
+    linewidth = 0.7
   ) +
   geom_jitter(
     width = 0.12, 
@@ -114,6 +121,10 @@ ddados |>
       "controlo"    = "#7A9B9E"
     )
   )+
+  scale_x_discrete(
+    labels = c("intervencao" = "Intervenção", "controlo" = "Controlo")
+  )
+    +
   labs(
     title = "Resultado MindMove: Score PHQ-9 às 8 semanas",
     x = "Grupo",
@@ -154,6 +165,15 @@ if(!dir.exists(here("data", "processed"))) {
 }
 
 # Guardar em 'processed' para ser usado no site/Quarto
-write_csv(dados_limpos, here("data", "processed", "mindmove_limpo.csv"))
+write_csv(dados_limpos, here("data", "processed", "mindmove_clean.csv"))
 
 message("Ficheiro processado guardado com sucesso!")
+
+
+
+
+
+
+bgfhjicujhgvsbhjxoivkjhb
+bdfchsjixjdhbfsjkd
+sbvdjiksjhbdv
