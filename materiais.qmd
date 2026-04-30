@@ -2,7 +2,9 @@
 title: "Materiais"
 ---
 
-## CRF
+## Materiais utilizados para o estudo
+
+Nesta página disponibilizamos os materiais utilizados para a recolha e gestão dos dados clínicos do estudo **MindMove**.
 
 ::: callout-tip
 ## Material Disponível para download
@@ -10,4 +12,47 @@ title: "Materiais"
 **Case Report Form** utilizado (completo): [Descarregar o CRF (PDF)](ficheiros/crf_mindmove.pdf)
 
 **Relatório de desenvolvimento do eCRF em RedCap**: [Descarregar o relatório (PDF)](ficheiros/relatorio_crf.pdf)
+
+**Dicionário de Dados** (exportado do RedCap): [Descarregar o dicionário de dados (CSV)](ficheiros/dicionario_dados)
 :::
+
+Nesta secção, apresentamos os instrumentos e ferramentas utilizados para a estruturação, recolha de dados e implementação da intervenção do estudo **MindMove**.
+
+## 1. Dicionário de Dados e Plataforma REDCap
+
+A base de toda a recolha de dados foi sustentada pela criação prévia de um **Dicionário de Dados**, garantindo a padronização e comparabilidade das variáveis. A partir deste dicionário, o nosso *electronic Case Report Form* (eCRF) foi construído e implementado na plataforma **REDCap**.
+
+A escolha do REDCap permitiu-nos aplicar validações automáticas e lógica condicional, minimizando erros humanos e otimizando a experiência quer dos investigadores, quer dos participantes.
+
+------------------------------------------------------------------------
+
+## 2. Estrutura Modular do eCRF
+
+O eCRF foi dividido em 4 instrumentos independentes para facilitar a gestão de dados nos diferentes momentos do estudo clínico:
+
+1.  **Identificação e Triagem:** Valida os critérios de elegibilidade (idade, estatuto de estudante, acessos tecnológicos e critérios clínicos de exclusão) e assegura a formalização do Consentimento Informado.
+2.  **Outcome Primário:** Focado exclusivamente na aplicação da escala PHQ-9. Este isolamento garante que a monitorização da depressão seja tratada com prioridade máxima.
+3.  **Outcomes Secundários:** Agrupa as escalas de ansiedade (GAD-7), bem-estar (WHO-5) e qualidade do sono (PSQI). Para reduzir o tempo de preenchimento, utilizámos o formato de matriz de dados (grelhas), uniformizando a resposta.
+4.  **Usabilidade e Adesão da App:** Aplicado no final da intervenção, inclui a escala SUS e métricas de atividade semanal, cruzando a eficácia terapêutica com a proficiência técnica da aplicação MindMove.
+
+------------------------------------------------------------------------
+
+## 3. Implementação e Controlo de Qualidade
+
+Para garantir a integridade dos dados e a proteção do participante, implementámos um conjunto de regras técnicas avançadas no REDCap:
+
+-   **Ocultação de Variáveis e Cálculos Automáticos:** O processamento das escalas (ex: PHQ-9) utiliza *Calculated Fields* para evitar erros de soma manual. Utilizámos a Action Tag `@HIDDEN-SURVEY` para que os scores finais sejam calculados em tempo real, mas permaneçam invisíveis para o participante, evitando enviesamentos ou impacto psicológico imediato.
+-   **Política de Missing Data:** Todos os campos relativos a *outcomes* primários, secundários, demografia e elegibilidade foram marcados como de preenchimento obrigatório.
+-   **Regras de Validação:** Abertura de campos restrita. Por exemplo, a variável "Idade" só aceita números inteiros entre 18 e 30 anos.
+-   **Triagem Automatizada:** Aplicação de *Branching Logic* na fase de triagem. Se o participante não consentir ou revelar um diagnóstico prévio impeditivo, o sistema encerra o inquérito e informa imediatamente a não elegibilidade.
+
+------------------------------------------------------------------------
+
+## 4. Protocolo de Segurança e Alertas Clínicos
+
+Dada a sensibilidade do estudo na área da saúde mental, o eCRF foi configurado com uma dupla camada de resposta automática de segurança para casos de risco (ex: deteção de ideação suicida no item 9 do PHQ-9 ou *score* total \> 20):
+
+1.  **Apoio Imediato ao Participante:** Através de *Branching Logic*, o sistema exibe imediatamente uma mensagem com contactos de emergência e linhas de apoio (ex: SNS 24, SOS Estudante).
+2.  **Alerta à Equipa de Investigação:** O módulo *Alerts & Notifications* dispara um e-mail em tempo real para os investigadores, permitindo a ativação imediata do protocolo de resgate.
+
+------------------------------------------------------------------------

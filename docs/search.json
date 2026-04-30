@@ -11,14 +11,42 @@
     "href": "materiais.html",
     "title": "Materiais",
     "section": "",
-    "text": "TipMaterial Disponível para download\n\n\n\nCase Report Form utilizado (completo): Descarregar o CRF (PDF)\nRelatório de desenvolvimento do eCRF em RedCap: Descarregar o relatório (PDF)"
+    "text": "Nesta página disponibilizamos os materiais utilizados para a recolha e gestão dos dados clínicos do estudo MindMove.\n\n\n\n\n\n\nTipMaterial Disponível para download\n\n\n\nCase Report Form utilizado (completo): Descarregar o CRF (PDF)\nRelatório de desenvolvimento do eCRF em RedCap: Descarregar o relatório (PDF)\nDicionário de Dados (exportado do RedCap): Descarregar o dicionário de dados (CSV)\n\n\nNesta secção, apresentamos os instrumentos e ferramentas utilizados para a estruturação, recolha de dados e implementação da intervenção do estudo MindMove."
   },
   {
-    "objectID": "materiais.html#crf",
-    "href": "materiais.html#crf",
+    "objectID": "materiais.html#materiais-utilizados-para-o-estudo",
+    "href": "materiais.html#materiais-utilizados-para-o-estudo",
     "title": "Materiais",
     "section": "",
-    "text": "TipMaterial Disponível para download\n\n\n\nCase Report Form utilizado (completo): Descarregar o CRF (PDF)\nRelatório de desenvolvimento do eCRF em RedCap: Descarregar o relatório (PDF)"
+    "text": "Nesta página disponibilizamos os materiais utilizados para a recolha e gestão dos dados clínicos do estudo MindMove.\n\n\n\n\n\n\nTipMaterial Disponível para download\n\n\n\nCase Report Form utilizado (completo): Descarregar o CRF (PDF)\nRelatório de desenvolvimento do eCRF em RedCap: Descarregar o relatório (PDF)\nDicionário de Dados (exportado do RedCap): Descarregar o dicionário de dados (CSV)\n\n\nNesta secção, apresentamos os instrumentos e ferramentas utilizados para a estruturação, recolha de dados e implementação da intervenção do estudo MindMove."
+  },
+  {
+    "objectID": "materiais.html#dicionário-de-dados-e-plataforma-redcap",
+    "href": "materiais.html#dicionário-de-dados-e-plataforma-redcap",
+    "title": "Materiais",
+    "section": "1. Dicionário de Dados e Plataforma REDCap",
+    "text": "1. Dicionário de Dados e Plataforma REDCap\nA base de toda a recolha de dados foi sustentada pela criação prévia de um Dicionário de Dados, garantindo a padronização e comparabilidade das variáveis. A partir deste dicionário, o nosso electronic Case Report Form (eCRF) foi construído e implementado na plataforma REDCap.\nA escolha do REDCap permitiu-nos aplicar validações automáticas e lógica condicional, minimizando erros humanos e otimizando a experiência quer dos investigadores, quer dos participantes."
+  },
+  {
+    "objectID": "materiais.html#estrutura-modular-do-ecrf",
+    "href": "materiais.html#estrutura-modular-do-ecrf",
+    "title": "Materiais",
+    "section": "2. Estrutura Modular do eCRF",
+    "text": "2. Estrutura Modular do eCRF\nO eCRF foi dividido em 4 instrumentos independentes para facilitar a gestão de dados nos diferentes momentos do estudo clínico:\n\nIdentificação e Triagem: Valida os critérios de elegibilidade (idade, estatuto de estudante, acessos tecnológicos e critérios clínicos de exclusão) e assegura a formalização do Consentimento Informado.\nOutcome Primário: Focado exclusivamente na aplicação da escala PHQ-9. Este isolamento garante que a monitorização da depressão seja tratada com prioridade máxima.\nOutcomes Secundários: Agrupa as escalas de ansiedade (GAD-7), bem-estar (WHO-5) e qualidade do sono (PSQI). Para reduzir o tempo de preenchimento, utilizámos o formato de matriz de dados (grelhas), uniformizando a resposta.\nUsabilidade e Adesão da App: Aplicado no final da intervenção, inclui a escala SUS e métricas de atividade semanal, cruzando a eficácia terapêutica com a proficiência técnica da aplicação MindMove."
+  },
+  {
+    "objectID": "materiais.html#implementação-e-controlo-de-qualidade",
+    "href": "materiais.html#implementação-e-controlo-de-qualidade",
+    "title": "Materiais",
+    "section": "3. Implementação e Controlo de Qualidade",
+    "text": "3. Implementação e Controlo de Qualidade\nPara garantir a integridade dos dados e a proteção do participante, implementámos um conjunto de regras técnicas avançadas no REDCap:\n\nOcultação de Variáveis e Cálculos Automáticos: O processamento das escalas (ex: PHQ-9) utiliza Calculated Fields para evitar erros de soma manual. Utilizámos a Action Tag @HIDDEN-SURVEY para que os scores finais sejam calculados em tempo real, mas permaneçam invisíveis para o participante, evitando enviesamentos ou impacto psicológico imediato.\nPolítica de Missing Data: Todos os campos relativos a outcomes primários, secundários, demografia e elegibilidade foram marcados como de preenchimento obrigatório.\nRegras de Validação: Abertura de campos restrita. Por exemplo, a variável “Idade” só aceita números inteiros entre 18 e 30 anos.\nTriagem Automatizada: Aplicação de Branching Logic na fase de triagem. Se o participante não consentir ou revelar um diagnóstico prévio impeditivo, o sistema encerra o inquérito e informa imediatamente a não elegibilidade."
+  },
+  {
+    "objectID": "materiais.html#protocolo-de-segurança-e-alertas-clínicos",
+    "href": "materiais.html#protocolo-de-segurança-e-alertas-clínicos",
+    "title": "Materiais",
+    "section": "4. Protocolo de Segurança e Alertas Clínicos",
+    "text": "4. Protocolo de Segurança e Alertas Clínicos\nDada a sensibilidade do estudo na área da saúde mental, o eCRF foi configurado com uma dupla camada de resposta automática de segurança para casos de risco (ex: deteção de ideação suicida no item 9 do PHQ-9 ou score total &gt; 20):\n\nApoio Imediato ao Participante: Através de Branching Logic, o sistema exibe imediatamente uma mensagem com contactos de emergência e linhas de apoio (ex: SNS 24, SOS Estudante).\nAlerta à Equipa de Investigação: O módulo Alerts & Notifications dispara um e-mail em tempo real para os investigadores, permitindo a ativação imediata do protocolo de resgate."
   },
   {
     "objectID": "equipa.html",
@@ -39,7 +67,7 @@
     "href": "index.html",
     "title": "Ensaio MindMove",
     "section": "",
-    "text": "Bem-vindos ao Projeto MindMove!\nEste site apresenta o protocolo e os resultados preliminares do ensaio clínico focado na redução da sintomatologia depressiva em estudantes universitários através da aplicação MindMove.\nO nosso objetivo é testar a viabilidade de uma intervenção digital de Terapia Cognitivo-Comportamental (dCBT).\nNota: Este ensaio clínico não foi, nem será, realmente realizado, tratando-se meramente de um projeto académico."
+    "text": "Bem-vindos ao MindMove!\nA transição para o ensino superior é um período crítico que exige adaptação, o que pode aumentar a vulnerabilidade a desafios de saúde mental.\nO MindMove é um ensaio clínico randomizado (RCT) focado em avaliar a viabilidade e a eficácia de uma intervenção digital multimodal, baseada em Terapia Cognitivo-Comportamental (dCBT) e monitorização de estilos de vida, para a redução de sintomas depressivos em estudantes universitários.\n\nO que podem encontrar neste website?\nCriámos este espaço para documentar de forma transparente todas as fases do nosso ensaio clínico. Utilize o menu de navegação no topo da página para explorar as seguintes secções:\n\nProtocolo: O desenho detalhado do estudo, incluindo os critérios de elegibilidade, detalhes sobre a intervenção e o fluxograma (CONSORT) do estudo.\nMateriais: Os instrumentos utilizados na recolha e gestão segura dos dados clínico, como o CRF.\nResultados: A análise estatística dos dados recolhidos, incluindo a comparação das características basais da amostra e a avaliação do outcome primário (escala PHQ-9).\nEquipa: Os investigadores responsáveis pela condução deste projeto."
   },
   {
     "objectID": "protocolo.html",
