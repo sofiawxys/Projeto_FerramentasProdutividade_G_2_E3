@@ -13,7 +13,7 @@ Nesta página disponibilizamos os materiais utilizados para a recolha e gestão 
 
 **Relatório de desenvolvimento do eCRF em RedCap**: [Descarregar o relatório (PDF)](ficheiros/relatorio_crf.pdf)
 
-**Dicionário de Dados** (exportado do RedCap): [Descarregar o dicionário de dados (CSV)](ficheiros/dicionario_dados)
+**Dicionário de Dados** (exportado do RedCap): [Descarregar o dicionário de dados (CSV)](ficheiros/dicionario_dados.csv)
 :::
 
 Nesta secção, apresentamos os instrumentos e ferramentas utilizados para a estruturação, recolha de dados e implementação da intervenção do estudo **MindMove**.
