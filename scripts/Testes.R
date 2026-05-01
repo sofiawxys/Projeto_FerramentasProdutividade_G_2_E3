@@ -97,7 +97,7 @@ tabela1 <- dados |>
   )|> 
   add_overall() |> 
   add_p()
-
+tabela1
 
 # ---- 3. Gráfico do Outcome Primário----
 dados |> 
@@ -123,8 +123,7 @@ dados |>
   )+
   scale_x_discrete(
     labels = c("intervencao" = "Intervenção", "controlo" = "Controlo")
-  )
-    +
+  )+
   labs(
     title = "Resultado MindMove: Score PHQ-9 às 8 semanas",
     x = "Grupo",
@@ -168,12 +167,3 @@ if(!dir.exists(here("data", "processed"))) {
 write_csv(dados_limpos, here("data", "processed", "mindmove_clean.csv"))
 
 message("Ficheiro processado guardado com sucesso!")
-
-
-
-
-
-
-bgfhjicujhgvsbhjxoivkjhb
-bdfchsjixjdhbfsjkd
-sbvdjiksjhbdv
