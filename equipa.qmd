@@ -2,14 +2,33 @@
 title: "Equipa de Investigação"
 ---
 
-O projeto MindMove é desenvolvido por:
+O projeto **MindMove** foi desenvolvido no âmbito da Unidade Curricular de **Ferramentas de Produtividade**, inserida no 1º ano da **Licenciatura em Saúde Digital e Inovação Biomédica** da Faculdade de Medicina da Universidade do Porto (FMUP).
 
--   **Ana Sofia Moreira**
+A nossa equipa colaborou de forma equilibrada na criação da estrutura do ensaio clínico, na análise de dados e na implementação da plataforma digital.
 
--   **Flávio Vieira**
+---
 
--   **Gabriela Carneiro**
+### Ana Sofia Bermudes Moreira
+- **Afiliação Institucional:** Estudante (1º Ano), Licenciatura em Saúde Digital e Inovação Biomédica, FMUP.
+- ***Principais responsabilidades no Projeto:** Desenvolvimento do site
+- **Contacto:** up202505696@up.pt
 
--   **Maria Leonor Fernandes**
+### Flávio Ferreira Lino Vieira
+- **Afiliação Institucional:** Estudante (1º Ano), Licenciatura em Saúde Digital e Inovação Biomédica, FMUP.
+- **Principais responsabilidades no Projeto:** Análise Estatística em R
+- **Contacto:** up@up.pt
 
-Faculdade de Medicina da Universidade do Porto
+### Gabriela Gonçalves Carneiro
+- **Afiliação Institucional:** Estudante (1º Ano), Licenciatura em Saúde Digital e Inovação Biomédica, FMUP.
+- ***Principais responsabilidades no Projeto:** Desenvolvimento da apresentação PPT
+- **Contacto:** up@up.pt
+
+### Maria Leonor Pereira Fernandes
+- **Afiliação Institucional:** Estudante (1º Ano), Licenciatura em Saúde Digital e Inovação Biomédica, FMUP.
+- **Principais responsabilidades no Projeto:** Desenvolvimento do protótipo da aplicação
+- **Contacto:** up202505760@up.pt
+
+---
+
+**Contexto Académico:**
+Este trabalho constitui um elemento de avaliação para a Unidade Curricular de Ferramentas de Produtividade.
