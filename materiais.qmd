@@ -9,11 +9,11 @@ Nesta página disponibilizamos os materiais utilizados para a recolha e gestão 
 ::: callout-tip
 ## Material Disponível para download
 
-**Case Report Form** utilizado (completo): [Descarregar o CRF (PDF)](ficheiros/crf_mindmove.pdf)
+**Case Report Form** utilizado (completo): [Descarregar o CRF (PDF)](ficheiros/crf.pdf)
 
 **Relatório de desenvolvimento do eCRF em RedCap**: [Descarregar o relatório (PDF)](ficheiros/relatorio_crf.pdf)
 
-**Dicionário de Dados** (exportado do RedCap): [Descarregar o dicionário de dados (CSV)](ficheiros/dicionario_dados.csv)
+**Dicionário de Dados** (exportado do RedCap): [Descarregar o dicionário de dados (CSV)](ficheiros/dicionariodadoscrf.csv)
 :::
 
 Nesta secção, apresentamos os instrumentos e ferramentas utilizados para a estruturação, recolha de dados e implementação da intervenção do estudo **MindMove**.
