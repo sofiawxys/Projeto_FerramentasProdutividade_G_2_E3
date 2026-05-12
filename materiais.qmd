@@ -11,7 +11,7 @@ Nesta página disponibilizamos os materiais utilizados para a recolha e gestão 
 
 **Case Report Form** utilizado (completo): [Descarregar o CRF (PDF)](ficheiros/crf.pdf)
 
-**Relatório de desenvolvimento do eCRF em RedCap**: [Descarregar o relatório (PDF)](ficheiros/relatorio_crf.pdf)
+**Relatório de desenvolvimento do eCRF em RedCap**: [Descarregar o relatório (PDF)](ficheiros/relatoriocrf.pdf)
 
 **Dicionário de Dados** (exportado do RedCap): [Descarregar o dicionário de dados (CSV)](ficheiros/dicionariodadoscrf.csv)
 :::
