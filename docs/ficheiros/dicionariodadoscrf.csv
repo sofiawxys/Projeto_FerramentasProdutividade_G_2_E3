@@ -1,10 +1,12 @@
 ﻿"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
 record_id,identificacao_e_triagem,,text,"Record ID",,,,,,,,,,,,,
-tri_idade,identificacao_e_triagem,"Dados de Identificação e Triagem",text,"Idade do participante",,,integer,18,30,y,,y,,,,,
+data_nasc,identificacao_e_triagem,"Dados de Identificação e Triagem",text,"Data de Nascimento (AAAA-MM-DD)",,,date_ymd,,,y,,y,,,,,
+status_idade,identificacao_e_triagem,,text,"Idade Elegível:",,,,,,,,,,,,," @CALCTEXT(if(rounddown(datediff([data_nasc], 'today', 'y')) >= 18 and rounddown(datediff([data_nasc], 'today', 'y')) <= 30, 'Elegível: Idade entre 18 e 30 anos', 'Excluído: Fora da faixa etária. Obrigado pelo seu interesse. O questionário termina aqui.'))"
 tri_estudante,identificacao_e_triagem,,yesno,"Estatuto de estudante universitário ativo?",,,,,,y,,y,,,,,
 tri_smartphone,identificacao_e_triagem,,yesno,"Possui smartphone Android ou iOS com internet?",,,,,,y,,y,,,,,
 tri_lingua,identificacao_e_triagem,,yesno,"Proficiência na língua portuguesa?",,,,,,y,,y,,,,,
 tri_consentimento,identificacao_e_triagem,,yesno,"Forneceu consentimento informado voluntário?",,,,,,y,,y,,,,,
+upload_tc,identificacao_e_triagem,,file,"Submeta aqui o Termo de Consentimento assinado (PDF ou Foto)",,,,,,,,,,,,,
 tri_exclusao_psic,identificacao_e_triagem,,yesno,"Diagnóstico prévio de patologia psiquiátrica grave?",,,,,,y,,y,,,,,
 tri_exclusao_med,identificacao_e_triagem,,yesno,"Toma de antidepressivos ou psicoterapia nos últimos 30 dias?",,,,,,y,,y,,,,,
 texto_exclusao,identificacao_e_triagem,,descriptive,"Infelizmente, não cumpre os critérios para este estudo. Obrigado pelo seu interesse! O questionário termina aqui.",,,,,,,"[tri_estudante]= ""0"" or [tri_smartphone] =""0"" or [tri_lingua]=""0"" or [tri_consentimento] =""0"" or [tri_exclusao_psic] =""1"" or [tri_exclusao_med] =""1""",,,,,,
