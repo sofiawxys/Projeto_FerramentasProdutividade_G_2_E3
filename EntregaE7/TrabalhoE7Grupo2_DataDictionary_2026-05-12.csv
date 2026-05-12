@@ -1,0 +1,66 @@
+﻿"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
+record_id,identificacao_e_triagem,,text,"Record ID",,,,,,,,,,,,,
+data_nasc,identificacao_e_triagem,"Dados de Identificação e Triagem",text,"Data de Nascimento (AAAA-MM-DD)",,,date_ymd,,,y,,y,,,,,
+status_idade,identificacao_e_triagem,,text,"Idade Elegível:",,,,,,,,,,,,," @CALCTEXT(if(rounddown(datediff([data_nasc], 'today', 'y')) >= 18 and rounddown(datediff([data_nasc], 'today', 'y')) <= 30, 'Elegível: Idade entre 18 e 30 anos', 'Excluído: Fora da faixa etária. Obrigado pelo seu interesse. O questionário termina aqui.'))"
+tri_estudante,identificacao_e_triagem,,yesno,"Estatuto de estudante universitário ativo?",,,,,,y,,y,,,,,
+tri_smartphone,identificacao_e_triagem,,yesno,"Possui smartphone Android ou iOS com internet?",,,,,,y,,y,,,,,
+tri_lingua,identificacao_e_triagem,,yesno,"Proficiência na língua portuguesa?",,,,,,y,,y,,,,,
+tri_consentimento,identificacao_e_triagem,,yesno,"Forneceu consentimento informado voluntário?",,,,,,y,,y,,,,,
+upload_tc,identificacao_e_triagem,,file,"Submeta aqui o Termo de Consentimento assinado (PDF ou Foto)",,,,,,,,,,,,,
+tri_exclusao_psic,identificacao_e_triagem,,yesno,"Diagnóstico prévio de patologia psiquiátrica grave?",,,,,,y,,y,,,,,
+tri_exclusao_med,identificacao_e_triagem,,yesno,"Toma de antidepressivos ou psicoterapia nos últimos 30 dias?",,,,,,y,,y,,,,,
+texto_exclusao,identificacao_e_triagem,,descriptive,"Infelizmente, não cumpre os critérios para este estudo. Obrigado pelo seu interesse! O questionário termina aqui.",,,,,,,"[tri_estudante]= ""0"" or [tri_smartphone] =""0"" or [tri_lingua]=""0"" or [tri_consentimento] =""0"" or [tri_exclusao_psic] =""1"" or [tri_exclusao_med] =""1""",,,,,,
+phq9_q1,outcome_primario,"Avaliação de Resultados Primários",radio,"Pouco interesse ou prazer em fazer as coisas","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,phq_matrix,,
+phq9_q2,outcome_primario,,radio,"Sentir-se em baixo, deprimido(a) ou sem esperança","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,phq_matrix,,
+phq9_q3,outcome_primario,,radio,"Dificuldade em adormecer em manter o sono ou dormir demais","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,phq_matrix,,
+phq9_q4,outcome_primario,,radio,"Sentir-se cansado(a) ou com pouca energia","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,phq_matrix,,
+phq9_q5,outcome_primario,,radio,"Falta de apetite ou comer demais","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,phq_matrix,,
+phq9_q6,outcome_primario,,radio,"Sentir-se mal consigo próprio(a) ou sentir que é um fracasso ou que desiludiu a sua família","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,phq_matrix,,
+phq9_q7,outcome_primario,,radio,"Dificuldade em concentrar-se nas coisas tais como ler o jornal ou ver televisão","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,phq_matrix,,
+phq9_q8,outcome_primario,,radio,"Movimentar-se ou falar tão lentamente que os outros notam? Ou o oposto, estar tão irrequieto(a) que se movimenta muito mais do que o habitual","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,phq_matrix,,
+phq9_q9,outcome_primario,,radio,"Pensamentos de que seria melhor estar morto(a) ou de se magoar","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,phq_matrix,,
+phq9_total,outcome_primario,,calc,"Score Total PHQ-9","[phq9_q1] + [phq9_q2] + [phq9_q3] + [phq9_q4] + [phq9_q5] + [phq9_q6] + [phq9_q7] + [phq9_q8] +[phq9_q9]",,,,,,,,,,,," @HIDDEN-SURVEY @READONLY"
+alerta_risco,outcome_primario,,descriptive,"A sua saúde mental é a nossa prioridade. Se estiver a passar por um momento de grande angústia ou crise, por favor, não espere pelo nosso contacto. Utilize as seguintes linhas de apoio gratuitas e confidenciais:
+
+Linha SNS 24: 808 24 24 24 (Opção 4 - Aconselhamento Psicológico)
+
+Voz de Apoio: 225 506 070
+
+SOS Estudante: 915246060 / 969554545 / 239484020 
+
+Em caso de emergência médica imediata, ligue 112",,,,,,,"[phq9_q9]>1 or [phq9_total]>20",,,,,,
+gad7_1,outcomes_secundarios,"Avaliação de Resultados Secundários",radio,"Sentir-se nervoso(a) ansioso(a) ou muito tenso(a)","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,gad_matrix,,
+gad7_2,outcomes_secundarios,,radio,"Não ser capaz de parar ou de controlar as preocupações","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,gad_matrix,,
+gad7_3,outcomes_secundarios,,radio,"Preocupar-se demasiado com diversas coisas","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,gad_matrix,,
+gad7_4,outcomes_secundarios,,radio,"Dificuldade em relaxar","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,gad_matrix,,
+gad7_5,outcomes_secundarios,,radio,"Sentir-se tão irrequieto(a) que é difícil estar parado(a)","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,gad_matrix,,
+gad7_6,outcomes_secundarios,,radio,"Ficar facilmente irritável ou aborrecido(a)","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,gad_matrix,,
+gad7_7,outcomes_secundarios,,radio,"Sentir medo como se algo terrível pudesse acontecer","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,gad_matrix,,
+gad7_total,outcomes_secundarios,,calc,"Score Total GAD7","[gad7_1] + [gad7_2] + [gad7_3] + [gad7_4] + [gad7_5] + [gad7_6] + [gad7_7]",,,,,,,,,,,," @HIDDEN-SURVEY @READONLY"
+psqi_total,outcomes_secundarios,,text,"Pontuação Global da Qualidade do Sono (PSQI)","0_Nenhuma_vez
+1_Varios_dias
+2_Mais_de_metade_dos_dias
+3_Quase_todos_os_dias","Score 0-21",integer,0,21,,,y,,,,,
+who5_1,outcomes_secundarios,,radio,"Tenho-me sentido alegre e bem-disposto(a)","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,who_matrix,,
+who5_2,outcomes_secundarios,,radio,"Tenho-me sentido calmo(a) e relaxado(a)","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,who_matrix,,
+who5_3,outcomes_secundarios,,radio,"Tenho-me sentido ativo(a) e vigoroso(a)","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,who_matrix,,
+who5_4,outcomes_secundarios,,radio,"Acordei sentindo-me fresco(a) e descansado(a)","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,who_matrix,,
+who5_5,outcomes_secundarios,,radio,"A minha vida diária tem estado cheia de coisas que me interessam","0_Nenhuma_vez, 0_Nenhuma_vez | 1_Varios_dias, 1_Varios_dias | 2_Mais_de_metade_dos_dias, 2_Mais_de_metade_dos_dias | 3_Quase_todos_os_dias, 3_Quase_todos_os_dias",,,,,,,y,,,who_matrix,,
+who5_total,outcomes_secundarios,,calc,"Score Total WHO5","([who5_1] + [who5_2] + [who5_3] + [who5_4] + [who5_5]) * 4",,,,,,,,,,,," @HIDDEN-SURVEY @READONLY"
+who5_categoria,outcomes_secundarios,,text,Bem-Estar:,,,,,,,,,,,,," @HIDDEN-SURVEY @READONLY @CALCTEXT(if([who5_total] < 50, 'Baixo Bem-Estar', 'Bem-Estar Adequado'))"
+af_min_mod,outcomes_secundarios,,text,"Minutos de atividade física moderada por semana",,min/semana,integer,0,10080,,,y,,,,,
+af_min_vig,outcomes_secundarios,,text,"Minutos de atividade física vigorosa por semana",,min/semana,integer,0,10080,,,y,,,,,
+eng_mood_freq,usabilidade_e_adesao_da_app,"Uso da App e Usabilidade",text,"Média de registos de humor semanais",,"logs app",number,0,7,,,y,,,,,
+eng_modulos_comp,usabilidade_e_adesao_da_app,,text,"Percentagem de conclusão dos módulos dCBT",,%,number,0,100,,,y,,,,,
+sus_q1,usabilidade_e_adesao_da_app,,radio,"Acho que gostaria de utilizar esta aplicação frequentemente","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+sus_q2,usabilidade_e_adesao_da_app,,radio,"Acho a aplicação desnecessariamente complexa","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+sus_q3,usabilidade_e_adesao_da_app,,radio,"Acho que a aplicação fácil de utilizar","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+sus_q4,usabilidade_e_adesao_da_app,,radio,"Acho que precisaria de ajuda de um técnico para conseguir utilizar esta aplicação","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+sus_q5,usabilidade_e_adesao_da_app,,radio,"Acho que as várias funcionalidades desta aplicação estão bem integradas","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+sus_q6,usabilidade_e_adesao_da_app,,radio,"Acho que a aplicação apresenta demasiadas inconsistências","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+sus_q7,usabilidade_e_adesao_da_app,,radio,"Imagino que a maioria das pessoas aprenderia a utilizar esta aplicação muito rapidamente","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+sus_q8,usabilidade_e_adesao_da_app,,radio,"Acho a aplicação muito pesada/difícil de utilizar","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+sus_q9,usabilidade_e_adesao_da_app,,radio,"Sinto-me muito confiante a utilizar a aplicação","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+sus_q10,usabilidade_e_adesao_da_app,,radio,"Tive de aprender muito antes de conseguir lidar com esta aplicação","1, Discordo Totalmente | 2, Discordo | 3, Neutro | 4, Concordo | 5, Concordo Totalmente",,,,,,,y,,,sus_matrix,,
+score_sus,usabilidade_e_adesao_da_app,,calc,"Score Total SUS","(([sus_q1]-1) + (5-[sus_q2]) + ([sus_q3]-1) + (5-[sus_q4]) + ([sus_q5]-1) + (5-[sus_q6]) + ([sus_q7]-1) + (5-[sus_q8]) + ([sus_q9]-1) + (5-[sus_q10])) * 2.5",,,,,,,,,,,," @HIDDEN-SURVEY @READONLY"
+sus_acessibilidade,usabilidade_e_adesao_da_app,,text,"Aceitabilidade da App:",,,,,,,,,,,,," @HIDDEN-SURVEY @CALCTEXT(if([score_sus] = '', '', if([score_sus] > 68, 'Boa Aceitabilidade', 'Abaixo do Limiar de Aceitabilidade')))"
