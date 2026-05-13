@@ -1,0 +1,105 @@
+---
+title: "IA"
+---
+
+::: callout-tip
+## Material Disponível para download
+
+**Documentação de IA em PDF:** [Descarregar (PDF)](ficheiros/docia.pdf)
+:::
+
+Este trabalho foi dividido em 3 entregas distintas onde fizemos uso da inteligência artificial de forma diferencial ao longo do tempo devido aos diferentes requisitos e limitações específicas de cada uma.
+
+---
+
+## 1ª Entrega
+
+### Ferramenta utilizada
+Gemini Pro 3.1
+
+### Justificação do uso
+A IA foi utilizada como ferramenta de apoio à redação técnica, estruturação de protocolos clínicos segundo a norma SPIRIT e auxílio na análise estatística e bibliográfica. O seu papel foi fundamental na organização lógica do cenário MindMove, na conversão de instruções complexas para o formato Markdown e na resolução de problemas de formatação de equações matemáticas. Adicionalmente, atuou como assistente na validação de fluxos de trabalho no REDCap e na revisão ortográfica e técnica do projeto.
+
+### Tópicos de Uso
+* **Estruturação de Protocolos (SPIRIT):** A IA ajudou na tradução de diretrizes teóricas para secções específicas do protocolo (objetivos, desenho de estudo e ética), garantindo a conformidade com o template exigido.
+* **Análise Estatística e Formulação:** A IA foi utilizada para elaborar a secção de análise de dados com base no exemplo fornecido, incluindo a criação de equações técnicas.
+* **Geração de Conteúdo e Racional:** A IA deu apoio na redação do racional do estudo, garantindo um tom adequado para o público-alvo.
+* **Revisão e Rigor Técnico:** Deteção de erros ortográficos, correção de terminologia técnica e refinamento da fluidez textual.
+
+### Registo dos Prompts
+
+> **Prompt (Comando):** "Preenche este template: [cópia das indicações da secção 2.3 do ficheiro de template fornecido no repositório da tp3] de acordo com estas informações: [cópia das indicações relativas à população do cenário MindMove fornecidas no Moodle]"
+
+> **Prompt (Comando):** "Tendo em conta estas informações [cópia das indicações relativas ao cenário MindMove fornecidas no Moodle], elabora a secção do protocolo de análise estatística. Baseia-te a nível de estrutura/ grau de detalhe deste exemplo: [cópia da secção de análise estatística do exemplo disponibilizado no Moodle]. Inclui uma equação onde considerares mais adequado."
+
+> **Prompt (Comando):** "Tendo em contas estas informações [cópia das indicações relativas ao cenário MindMove fornecidas no Moodle] cria um Título e um Racional com aproximadamente 400 palavras. Baseia-te a nível de estrutura/ grau de detalhe deste exemplo: [cópia da secção de análise estatística do exemplo disponibilizado no Moodle]. Este projeto é destinado a pessoas com interesse em psiquiatria/saúde mental - Área de investigação muito actual - Desafios éticos interessantes (grupo controlo)"
+
+> **Prompt (Comando):** "gera referencias bibliograficas para este protocolo: [cópia na íntegra do protocolo desenvolvido pelo grupo]"
+
+> **Prompt (Comando):** "estou a fazer um protocolo SPIRIT para um ensaio clínico randomizado. Gera os objetivos e os desenhos de estudo escritos em forma MarkDown, usando o template seguinte: [cópia das indicações da secção 1.2 e 2.1 do ficheiro de template fornecido no repositório da tp3 + cópia das indicações sobre os objetivos do cenário MindMove fornecidas no Moodle]"
+
+> **Prompt (Comando):** "estou a fazer um protocolo SPIRIT para um ensaio clínico randomizado. Gera apenas a Secção de ética e disseminação do protocolo, escritos em forma MarkDown [+ cópia na íntegra do protocolo desenvolvido pelo grupo]"
+
+**Nota:** Nesta entrega, como não haviam requisitos específicos para a documentação do uso de IA, optámos apenas pelo registo dos principais prompts utilizados.
+
+---
+
+## 2ª Entrega
+
+### Detalhes da Utilização
+* **Ferramenta utilizada:** Gemini 3.1 Pro.
+* **Nível máximo de utilização:** Nível 2 - Conceptual Architect (como pedido especificamente para esta entrega).
+
+### Justificação do uso
+A IA foi utilizada para ajudar a estruturar o projeto de uma forma técnica e para diagnosticar problemas com o mesmo. Além disso, atuou como assistente na validação da estrutura do dicionário de dados e no diagnóstico de erros críticos de importação, assegurando que as regras de validação (tipos de variáveis e limites) estivessem alinhadas com as boas práticas do REDCap.
+
+### Tópicos de Uso
+* **Estrutura Geral:** A IA foi usada para gestão de tópicos como "Arquitetura Modular" e "Segurança Ética", cujos foram aceites pois ajudou a alinhar o relatório com as expectativas pedagógicas de demonstrar um planeamento lógico.
+* **Melhoria Estética:** A IA fez uma sugestão para tornar a introdução mais fluida. No entanto, rejeitamos essa mesma proposta pois o grupo considerou que a introdução original já cumpria o enquadramento temático necessário para o contexto apresentado.
+* **Deteção de Erros:** A IA foi usada para a deteção de erros maioritariamente ortográficos e para identificar falhas na importação de variáveis da Fase 2 que estavam corrompidas, sendo as suas respostas aceites para garantir a qualidade profissional da versão final do projeto e para isolar os dados num CSV limpo, o que foi fundamental para avançar com o projeto sem erros de sistema.
+* **Validação de Variáveis:** A IA foi usada para otimizar a folha de cálculo, sugerindo o uso de yesno e definindo limites para a variável idade (18-30). Esta proposta foi aceite, pois permitiu que o controlo de qualidade dos dados fosse automático logo no momento da entrada.
+* **Revisão Técnica:** Por último, a IA foi usada para detetar imprecisões em termos como "REDCap" e nos critérios de exclusão. A sua resposta foi aceite para garantir o rigor técnico e a correção profissional da versão final do relatório, alinhando-o com o protocolo inicial.
+
+### Registo pormenorizado dos prompts/respostas e ajustes realizados
+
+> **Prompt (Comando):** "Com base nas aulas anexadas, vou passar as variáveis da 'Triagem e Demografia' para o Excel do REDCap. Verifica se as configurações que escolhi (campos 'text' e 'yesno', e validar a idade entre 18 e 30) estão corretas para o ficheiro ser importado sem dar erro."
+>
+> **Resposta da IA (Excerto):** "A tua estrutura está correta. Para as perguntas de Sim/Não, não precisas de escrever nada na Coluna 'Choices'. Ao usares o tipo 'yesno', o REDCap cria automaticamente as opções. Para a validação da idade, é fundamental preencheres a Coluna H (Text Validation Type) com 'integer', a I com '18' e a J com '30'."
+>
+> **Ajuste realizado:** Aceitei a sugestão técnica de utilizar o campo nativo yesno, o que simplificou a folha de cálculo e evitou erros manuais na definição de códigos.
+
+> **Prompt (Comando):** "Ao tentar importar o dicionário no REDCap, apareceu um erro de limite de 100 caracteres. Tendo em conta as regras de formatação, ajuda-me a perceber o que está mal no Excel do grupo e explica-me como resolvo isto para conseguir carregar a minha parte (Pessoa 1)."
+>
+> **Resposta da IA (Excerto):** "O erro ocorre porque as variáveis da Fase 2 foram coladas incorretamente, fundindo várias colunas numa só dentro da Coluna A (Variable Name). Para resolveres isto sem comprometer o teu trabalho, deves isolar apenas as tuas 9 linhas (cabeçalho + triagem) que estão bem formatadas e fazer o upload desse ficheiro limpo."
+>
+> **Ajuste realizado:** Segui a estratégia analítica de isolar a secção de Triagem, permitindo o avanço do Setup do projeto sem os erros estruturais das outras secções.
+
+> **Prompt (Comando):** "Seguindo as boas práticas do REDCap, preciso de dar acesso ao projeto às minhas colegas e ao professor. Explica-me onde devo ir no menu ('User Rights') e como lhes dou as permissões de edição e auditoria ('Project Design and Setup')."
+>
+> **Resposta da IA (Excerto):** "No menu lateral, clica em 'User Rights'. No bloco 'Assign new user', escreve o e-mail do docente. Clica em 'Add with custom rights' e garante que selecionas 'Project Design and Setup'. Para o perfil de auditoria, o docente deve ter acesso total para rever todas as alterações e logs do projeto."
+>
+> **Ajuste realizado:** Configurei os privilégios de acesso de forma hierárquica, garantindo que o docente tem supervisão total e a equipa tem autonomia de edição.
+
+> **Prompt (Comando):** "Que tópicos devo ter no relatório de modo a descrever a estrutura geral do eCRF e a organização dos formulários/instrumentos?"
+>
+> **Resposta da IA (Excerto):** "Para descrever a estrutura do teu eCRF de forma profissional, o tópico deve demonstrar que houve um planeamento lógico. Sugiro a secção 'Arquitetura e Organização do eCRF', detalhando: 1. Estrutura Modular (divisão em instrumentos como mindmove e rastreio_depressao); 2. Otimização da Interface (uso de Matrizes para reduzir a carga cognitiva); 3. Mecanismos de Validação (limites min/max e campos obrigatórios); 4. Segurança Ética (Branching Logic para Alerta de Risco Clínico)."
+>
+> **Ajuste realizado:** Este output serviu como checkpoint para os tópicos a abordar. Todos os pontos propostos foram incluídos, embora com uma estruturação diferente: as componentes técnicas (matrizes, validação e lógica) foram diluídas ao longo dos parágrafos, correspondendo cada parágrafo a uma matriz existente no estudo.
+
+> **Prompt (Comando):** "O que achas do seguinte texto? [versão rascunho do relatório] Sugere pontos de melhoria e identifica erros que verifiques tendo em conta o protocolo prévio desenhado para este estudo e a base de dados deste projeto."
+>
+> **Resposta da IA (Excerto):** "O texto está bem estruturado, mas requer ajustes de precisão. 1. Corrige redundâncias (ex: 'automatização do sistema automatize'); 2. Alinha os critérios de elegibilidade (deve focar-se na ausência de diagnóstico prévio e não apenas na inclusão); 3. Harmoniza os nomes dos instrumentos entre o Label visual e o nome técnico; 4. Evita repetir a explicação de Branching Logic e Matrizes em várias secções, fundindo a informação técnica na descrição dos formulários."
+>
+> **Ajuste realizado:** Foram integradas todas as alterações propostas, corrigindo lapsos gramaticais, imprecisões técnicas de confronto entre o protocolo e o dicionário de dados, e eliminando redundâncias estruturais.
+
+> **Prompt (Comando):** "Realiza uma avaliação da introdução e estruturação e organização novamente. Identifica erros e pontos de melhoria."
+>
+> **Resposta da IA (Excerto):** "O texto está profissional, mas necessita de um 'pente fino' ortográfico: corrige 'eletronic' para 'electronic', 'RedCap' para 'REDCap', e erros como 'elegebilidade' ou 'surje'. No rigor técnico, podes especificar o valor numérico do alerta de risco (>= 20). Como melhoria, a introdução poderia ser menos genérica e reforçar que o eCRF é a ponte entre a teoria do protocolo e a prática da recolha de dados."
+>
+> **Ajuste realizado:** Foram aceites e aplicadas todas as correções gramaticais e ortográficas. Contudo, as sugestões de alteração da introdução foram rejeitadas, por se considerar que o texto já se encontrava devidamente enquadrado e adequado ao propósito do relatório.
+
+---
+
+## 3ª Entrega
+
+Na 3ª entrega não demos uso a inteligência artificial, visto que apenas usámos material disponibilizado nas aulas e o próprio material criado pelo grupo nas entregas anteriores.

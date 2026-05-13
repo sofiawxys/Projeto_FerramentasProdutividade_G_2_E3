@@ -1,6 +1,5 @@
 ---
 title: "Materiais"
----c
 ---
 
 ## Materiais utilizados para o estudo
