@@ -16,6 +16,8 @@ website:
         text: Resultados
       - href: equipa.qmd
         text: Equipa
+      - href: ia.qmd
+        text: Documentação de IA
       - about.qmd
 
 format:

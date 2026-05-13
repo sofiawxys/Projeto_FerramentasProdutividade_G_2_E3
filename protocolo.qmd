@@ -9,7 +9,7 @@ Nesta página apresentamos a estrutura clínica e metodológica do ensaio **Mind
 ::: callout-tip
 ## Material Disponível para download
 
-**Documento Completo:** (documento integral com todas as referências bibliográficas): [Descarregar o Protocolo (PDF)](ficheiros/protocolo_tex.pdf).
+**Documento Completo:** (documento integral com todas as referências bibliográficas): [Descarregar o Protocolo (PDF)](ficheiros/protocolodolatex.pdf).
 :::
 
 ------------------------------------------------------------------------
