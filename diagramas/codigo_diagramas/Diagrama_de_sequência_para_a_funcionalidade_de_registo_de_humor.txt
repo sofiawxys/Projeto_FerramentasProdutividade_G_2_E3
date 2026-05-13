@@ -1,0 +1,21 @@
+Diagram
+autonumber
+participant U as Estudante (Utilizador)
+participant A as App MindMove (Client)
+participant S as Servidor (Backend)
+participant DB as Base de Dados (Storage)
+participant E as Equipa de Investigação
+U->>A: Insere humor e item 9 (PHQ-9)
+A->>S: HTTPS POST (Dados encriptados + Token)
+Note over S: Algoritmo de Triagem de Risco
+S->>S: Analisa pontuação (Risco Suicida?)
+alt Risco Detetado (Score >= 1 no Item 9)
+S->>E: Alerta Crítico (E-mail/Dashboard)
+S->>A: Resposta 200 OK + Protocolo Emergência
+A->>U: Exibe contactos de ajuda imediata
+else Risco Baixo/Normal
+S->>DB: Persistir Registo (Humor + Timestamp)
+DB-->>S: ACK (Confirmado)
+S-->>A: Resposta 200 OK (Sucesso)
+A->>U: Exibe "Registo Concluído" + Reforço Positivo
+end

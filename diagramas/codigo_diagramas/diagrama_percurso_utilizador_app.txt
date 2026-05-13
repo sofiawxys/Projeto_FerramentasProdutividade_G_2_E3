@@ -1,0 +1,52 @@
+flowchart TD
+    A([Início]) --> B[Acesso à Landing Page do MindMove]
+    B --> C[Leitura da Folha de Informação]
+    C --> D{Aceita Consentimento?}
+    D -- Não --> E([Fim do percurso])
+    D -- Sim --> F[Preenchimento da Triagem na Plataforma Digital]
+    F --> G{Critérios de Elegibilidade?}
+    
+    G -- Não Elegível --> H[Mensagem de Agradecimento e Encaminhamento]
+    H --> E
+    G -- Elegível --> I[Avaliação Baseline T0: PHQ-9, GAD-7, PSQI]
+    I --> J[Randomização Automatizada 1:1]
+    J --> K{Grupo Alocado?}
+
+    %% Ramo do Controlo
+    K -- Controlo --> L[Alocação ao Controlo / Entrega de Brochuras]
+    L --> M[Aguarda em Lista de Espera 8 Semanas]
+    M --> E
+
+    %% Ramo da Intervenção
+    K -- Intervenção --> N[Sessão Inicial de Onboarding]
+    N --> O[Uso Diário da App MindMove 8 Semanas]
+
+    %% Ações da App
+    O --> P[Realiza Registo Diário]
+    O --> Q[Acede a Módulos dCBT]
+    O --> R[Recebe Notificações Push]
+    O --> S[Avaliação T1 Semana 4]
+
+    P --> T{Alerta de Risco PHQ-9 >= 17?}
+    T -- Sim --> U[Recebe Notificação ou Contacto da Equipa Clínica]
+    U --> E
+    T -- Não --> V[Continua Intervenção]
+
+    Q --> V
+    R --> V
+    
+    S --> W[Avaliação Final T2 Semana 8]
+    V --> W
+    
+    W --> X[Preenchimento da Escala de Usabilidade SUS]
+    X --> Y[Receção de Relatório e Síntese de Resultados]
+    Y --> E
+
+    %% Cores para destacar as zonas
+    classDef redBox fill:#f9d0c4,stroke:#e06666,stroke-width:2px;
+    classDef blueBox fill:#cfe2f3,stroke:#6fa8dc,stroke-width:2px;
+    classDef orangeBox fill:#fce5cd,stroke:#f6b26b,stroke-width:2px;
+
+    class U redBox;
+    class N,O blueBox;
+    class L,M orangeBox;

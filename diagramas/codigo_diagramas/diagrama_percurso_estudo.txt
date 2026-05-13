@@ -1,0 +1,29 @@
+flowchart TD
+    A([Início]) --> B[Recrutamento e Divulgação]
+    B --> C[Acesso à Landing Page]
+    C --> D[Consentimento Informado Digital]
+    D --> E[Triagem Inicial PHQ-9]
+    E --> F{Elegível?}
+    F -- Não --> G[Exclusão do Estudo]
+    G --> H([Fim])
+    F -- Sim --> I[Baseline T0: PHQ-9, GAD-7, PSQI]
+    I --> J[Randomização 1:1]
+    J --> K{Grupo?}
+    
+    K -- Intervenção --> L[Sessão Inicial de Onboarding]
+    L --> M[Fase de Intervenção Ativa 8 semanas]
+    
+    K -- Controlo --> N[Alocação ao Controlo / Entrega de Brochuras]
+    N --> O[Acompanhamento Habitual 8 semanas]
+    
+    M --> P[Avaliação Intermédia Semana 4 - PHQ-9]
+    O --> P
+    P --> Q[Continua Intervenção / Controlo]
+    Q --> R[Avaliação Final Semana 8 - T1]
+    
+    R --> S{Participante Completou o Estudo?}
+    S -- Não --> T[Dropout]
+    T --> U([Fim])
+    S -- Sim --> V[Análise de Outcomes]
+    V --> W[Follow-up Opcional Semana 12]
+    W --> X([Fim])
