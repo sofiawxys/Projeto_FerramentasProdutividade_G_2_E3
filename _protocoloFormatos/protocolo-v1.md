@@ -105,7 +105,7 @@ O desenho segue uma razão de **randomização de 1:1** com 30 participantes, on
 
 Figura 1: Fluxograma CONSORT ilustrando a previsão da progressão dos participantes através das fases do ensaio clínico.
 
-![diagrama_percurso_clinico](https://github.com/user-attachments/assets/210aaaea-6163-4f57-9a89-1b68677612d3)
+![diagrama_percurso_clinico](https://github.com/sofiawxys/Projeto_FerramentasProdutividade_G_2_E3/blob/main/diagramas/diagrama_percurso_estudo.jpeg)
 
 Figura 2: Diagrama de atividades do percurso do participante no estudo clínico.
 
@@ -161,7 +161,7 @@ Os participantes mantêm o acompanhamento médico habitual, incluindo consultas 
 
 Figura 3: Diagrama de casos de uso da aplicação MindMove.
 
-![Diagrama_de_atividades_do_percurso_como_utilizador_da_aplicaçao_digital](https://github.com/user-attachments/assets/51df8228-ace3-46a0-b0a9-df01d3b11e84)
+![Diagrama_de_atividades_do_percurso_como_utilizador_da_aplicaçao_digital](https://github.com/sofiawxys/Projeto_FerramentasProdutividade_G_2_E3/blob/main/diagramas/diagrama_percurso_utilizador_app.jpeg)
 
 Figura 4: Diagrama de atividades mapeando a jornada de navegação dos participantes e suas tarefas enquanto utilizadores da aplicação digital.
 
