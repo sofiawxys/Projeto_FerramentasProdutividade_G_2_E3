@@ -13,6 +13,6 @@ Realizado por Ana Sofia Moreira, Flávio Vieira, Gabriela Carneiro e Maria Leono
 
 **Apresentação do estudo:** [Descarregar (PPT)](ficheiros/apresentacao.pptx)
 
-**Protótipo da aplicação: ** 
+**Protótipo da aplicação: ** [Clicar aqui (entrar no Figma)](https://www.figma.com/make/jqpvN3R267yLQH77eYXytl?node-id=0:1&p=f&t=kASozzg2W2VnMMyO-0&fullscreen=1&type=figmake)
 
 :::
