@@ -7,3 +7,12 @@ Projeto Académico para a Unidade Curricular de Ferramentas da Produtividade (Li
 Ano letivo de 2025/2026.
 
 Realizado por Ana Sofia Moreira, Flávio Vieira, Gabriela Carneiro e Maria Leonor Fernandes (Turma A, Cenário MindMove).
+
+::: callout-tip
+## Material Extra Disponível
+
+**Apresentação do estudo:** [Descarregar (PPT)](ficheiros/apresentacao.pptx)
+
+**Protótipo da aplicação: ** 
+
+:::
