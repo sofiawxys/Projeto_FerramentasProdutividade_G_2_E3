@@ -67,7 +67,7 @@
     "href": "ia.html",
     "title": "IA",
     "section": "",
-    "text": "TipMaterial Disponível para download\n\n\n\nDocumentação de IA em PDF: Descarregar (PDF)\nEste trabalho foi dividido em 3 entregas distintas onde fizemos uso da inteligência artificial de forma diferencial ao longo do tempo devido aos diferentes requisitos e limitações específicas de cada uma."
+    "text": "Nesta página documentamos de forma transparente o uso de inteligência artificial ao longo do desenvolvimento do projeto, detalhando as ferramentas utilizadas, os propósitos específicos para cada entrega, os tópicos abordados e um registo pormenorizado dos prompts e respostas que guiaram a nossa interação com a IA.\n\n\n\n\n\n\nTipMaterial Disponível para download\n\n\n\nDocumentação de IA em PDF: Descarregar (PDF)\n\n\nEste trabalho foi dividido em 3 entregas distintas onde fizemos uso da inteligência artificial de forma diferencial ao longo do tempo devido aos diferentes requisitos e limitações específicas de cada uma."
   },
   {
     "objectID": "ia.html#ª-entrega",
@@ -88,7 +88,7 @@
     "href": "ia.html#ª-entrega-2",
     "title": "IA",
     "section": "3ª Entrega",
-    "text": "3ª Entrega\nNa 3ª entrega não demos uso a inteligência artificial, visto que apenas usámos material disponibilizado nas aulas e o próprio material criado pelo grupo nas entregas anteriores."
+    "text": "3ª Entrega\n\nFerramentas utilizadas\nGemini 3.1 Pro.\n\n\nJustificação do uso\nNesta terceira e última fase, o objetivo foi concluir e aprimorar o protótipo interativo que já tínhamos começado a desenvolver no Figma. Usámos a inteligência artificial de forma pontual para nos ajudar a refinar o desenho da aplicação, melhorando o que já estava feito para que a navegação do estudante se tornasse ainda mais simples, fluida e eficiente.\n\n\nTópicos de Uso\n\nOtimização visual: Melhoria da apresentação do questionário PHQ-9, ajustando o design existente para tornar o preenchimento mais rápido e intuitivo.\nFluidez dos alertas: Aperfeiçoamento da forma como os avisos de risco aparecem no ecrã.\nMelhoria dos botões de ajuda: Ajustes finais nos botões de contacto (SNS 24 e U.Porto) que já tínhamos, para os tornar mais práticos e imediatos de usar num telemóvel.\nOtimização do consentimento: Simplificação do ecrã de consentimento informado, tornando-o mais fácil e rápido de ler num telemóvel antes de iniciar o questionário.\n\n\n\nRegisto pormenorizado dos prompts/respostas e ajustes realizados\n\nPrompt (Comando): “Temos o nosso questionário PHQ-9 já montado em vários ecrãs no Figma. O que podemos acrescentar ou alterar no desenho atual para que o estudante perceba facilmente o seu progresso e a navegação seja mais fluida?”\nResposta da IA (Excerto): “Para uma navegação mais eficiente, adicionem uma barra de progresso simples no topo de cada ecrã. Assim, o utilizador sabe logo quanto falta para terminar o questionário, o que torna o processo muito mais simples.”\nAjuste realizado: Aceitámos a ideia. Colocámos uma barra de progresso nos ecrãs que já tínhamos desenhado, o que tornou a perceção do questionário muito mais clara e direta.\n\n\nPrompt (Comando): “Já temos os alertas automáticos criados no nosso protótipo, mas atualmente eles abrem numa página nova. Como podemos melhorar isto no Figma para que a interação seja mais simples e rápida?”\nResposta da IA (Excerto): “Em vez de obrigarem o utilizador a mudar de página, ajustem o protótipo para que a mensagem de alerta apareça no mesmo ecrã, logo após o clique na resposta. Isto evita que o utilizador se perca e torna a navegação mais eficiente.”\nAjuste realizado: Aplicámos esta dica para melhorar o nosso protótipo. Ajustámos as interações no Figma para que os alertas surjam no próprio ecrã da pergunta, tornando a utilização da aplicação muito mais fluida.\n\n\nPrompt (Comando): “No último ecrã, já temos os contactos de apoio do SNS 24 e da U.Porto. Como podemos otimizar o desenho destes botões para que o processo de pedir ajuda seja o mais eficiente possível num telemóvel?”\nResposta da IA (Excerto): “Aumentem o tamanho dos botões para ocuparem quase toda a largura do ecrã, facilitando o toque. Para garantir a máxima eficiência, configurem a interação para que o clique abra diretamente o teclado de chamadas do telemóvel.”\nAjuste realizado: Aumentámos os botões que já tínhamos criado para serem mais fáceis de clicar. No Figma, melhorámos a interação do botão do SNS 24 para abrir logo a opção de chamada, eliminando passos intermédios e tornando o pedido de ajuda imediato."
   },
   {
     "objectID": "apr.html",
@@ -173,5 +173,12 @@
     "title": "Protocolo do Estudo",
     "section": "5. Ética e Segurança",
     "text": "5. Ética e Segurança\nO protocolo garante total conformidade com o RGPD (dados encriptados e anonimizados) e inclui um Protocolo de Resgate: se um participante pontuar ideação suicida ou agravamento severo, a equipa clínica recebe um alerta imediato para contacto em 24 horas."
+  },
+  {
+    "objectID": "ia.html#documentação-do-uso-de-ia-no-projeto",
+    "href": "ia.html#documentação-do-uso-de-ia-no-projeto",
+    "title": "IA",
+    "section": "",
+    "text": "Nesta página documentamos de forma transparente o uso de inteligência artificial ao longo do desenvolvimento do projeto, detalhando as ferramentas utilizadas, os propósitos específicos para cada entrega, os tópicos abordados e um registo pormenorizado dos prompts e respostas que guiaram a nossa interação com a IA.\n\n\n\n\n\n\nTipMaterial Disponível para download\n\n\n\nDocumentação de IA em PDF: Descarregar (PDF)\n\n\nEste trabalho foi dividido em 3 entregas distintas onde fizemos uso da inteligência artificial de forma diferencial ao longo do tempo devido aos diferentes requisitos e limitações específicas de cada uma."
   }
 ]
