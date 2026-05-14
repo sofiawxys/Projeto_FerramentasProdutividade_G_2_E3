@@ -10,17 +10,17 @@ A nossa equipa colaborou de forma equilibrada na criação da estrutura do ensai
 
 ### Ana Sofia Bermudes Moreira
 - **Afiliação Institucional:** Estudante (1º Ano), Licenciatura em Saúde Digital e Inovação Biomédica, FMUP.
-- **Principais responsabilidades no Projeto:** Secções de população e estatística do protocolo, criação de diagramas (casos de uso e CONSORT) e formatação final em LaTeX/Markdown. Gestão do RedCap (Aplicação da lógica condicional, definição dos instrumentos, etc.). Desenvolvimento do site.
+- **Principais responsabilidades no Projeto:** Secções de população e estatística do protocolo, criação de diagramas (casos de uso e CONSORT) e formatação final em LaTeX/Markdown. Gestão do RedCap (Aplicação da lógica condicional, definição dos instrumentos, etc). Desenvolvimento do site. Principais correções seguindo o feedback.
 - **Contacto:** up202505696@up.pt
 
 ### Flávio Ferreira Lino Vieira
 - **Afiliação Institucional:** Estudante (1º Ano), Licenciatura em Saúde Digital e Inovação Biomédica, FMUP.
-- **Principais responsabilidades no Projeto:** Objetivos e desenho do protocolo, ética e disseminação do protocolo, diagrama de atividades da app e formatação em Word. Teste do eCRF e relatório do seu desenvolmimento. Análise Estatística em R.
+- **Principais responsabilidades no Projeto:** Objetivos e desenho do protocolo, ética e disseminação do protocolo, diagrama de atividades da app e formatação em Word. Teste do eCRF e relatório do seu desenvolmimento. Análise Estatística em R. Gestão da declaração de IA.
 - **Contacto:** up202506271@up.pt
 
 ### Gabriela Gonçalves Carneiro
 - **Afiliação Institucional:** Estudante (1º Ano), Licenciatura em Saúde Digital e Inovação Biomédica, FMUP.
-- **Principais responsabilidades no Projeto:** Título e racional do protocolo, diagrama de atividades do participante, CONSORT e gestão integral das referências bibliográficas. Desenvolvimento do dicionário de dados para o eCRF. Desenvolvimento da apresentação PPT.
+- **Principais responsabilidades no Projeto:** Título e racional do protocolo, diagrama de atividades do participante, CONSORT e gestão integral das referências bibliográficas. Desenvolvimento do dicionário de dados para o eCRF. Desenvolvimento da apresentação PPT. Vídeo de demonstração do protótipo.
 - **Contacto:** up202505760@up.pt
 
 ### Maria Leonor Pereira Fernandes
