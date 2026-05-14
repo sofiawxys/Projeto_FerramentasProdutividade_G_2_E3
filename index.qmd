@@ -17,5 +17,7 @@ Criámos este espaço para documentar de forma transparente todas as fases do no
 -   **Resultados:** A análise estatística dos dados recolhidos, incluindo a comparação das características basais da amostra e a avaliação do *outcome* primário (escala PHQ-9).
 -   **Equipa:** Os investigadores responsáveis pela condução deste projeto.
 -   **Documentação de IA:** Registo detalhado do uso de LLMs para a elaboração do trabalho.
+-   **Apresentação:** Materiais para a apresentação do projeto.
+
 
 ------------------------------------------------------------------------
