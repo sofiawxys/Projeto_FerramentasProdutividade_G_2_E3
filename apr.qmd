@@ -4,9 +4,6 @@ title: "Apresentação"
 
 ##Slides
 
-
-
-
 ##vídeo
 
 {{< video https://youtu.be/cAeMl6o3SJE >}}
