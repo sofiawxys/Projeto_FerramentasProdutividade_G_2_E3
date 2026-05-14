@@ -2,6 +2,10 @@
 title: "IA"
 ---
 
+## Documentação do uso de IA no projeto
+
+Nesta página documentamos de forma transparente o uso de inteligência artificial ao longo do desenvolvimento do projeto, detalhando as ferramentas utilizadas, os propósitos específicos para cada entrega, os tópicos abordados e um registo pormenorizado dos prompts e respostas que guiaram a nossa interação com a IA.
+
 ::: callout-tip
 ## Material Disponível para download
 
@@ -100,6 +104,37 @@ A IA foi utilizada para ajudar a estruturar o projeto de uma forma técnica e pa
 
 ---
 
+#
 ## 3ª Entrega
 
-Na 3ª entrega não demos uso a inteligência artificial, visto que apenas usámos material disponibilizado nas aulas e o próprio material criado pelo grupo nas entregas anteriores.
+### Ferramentas utilizadas
+Gemini 3.1 Pro.
+
+### Justificação do uso
+Nesta terceira e última fase, o objetivo foi concluir e aprimorar o protótipo interativo que já tínhamos começado a desenvolver no Figma. Usámos a inteligência artificial de forma pontual para nos ajudar a refinar o desenho da aplicação, melhorando o que já estava feito para que a navegação do estudante se tornasse ainda mais simples, fluida e eficiente.
+
+### Tópicos de Uso
+* **Otimização visual:** Melhoria da apresentação do questionário PHQ-9, ajustando o design existente para tornar o preenchimento mais rápido e intuitivo.
+* **Fluidez dos alertas:** Aperfeiçoamento da forma como os avisos de risco aparecem no ecrã.
+* **Melhoria dos botões de ajuda:** Ajustes finais nos botões de contacto (SNS 24 e U.Porto) que já tínhamos, para os tornar mais práticos e imediatos de usar num telemóvel.
+* **Otimização do consentimento:** Simplificação do ecrã de consentimento informado, tornando-o mais fácil e rápido de ler num telemóvel antes de iniciar o questionário.
+
+### Registo pormenorizado dos prompts/respostas e ajustes realizados
+
+> **Prompt (Comando):** "Temos o nosso questionário PHQ-9 já montado em vários ecrãs no Figma. O que podemos acrescentar ou alterar no desenho atual para que o estudante perceba facilmente o seu progresso e a navegação seja mais fluida?"
+> 
+> **Resposta da IA (Excerto):** "Para uma navegação mais eficiente, adicionem uma barra de progresso simples no topo de cada ecrã. Assim, o utilizador sabe logo quanto falta para terminar o questionário, o que torna o processo muito mais simples."
+> 
+> **Ajuste realizado:** Aceitámos a ideia. Colocámos uma barra de progresso nos ecrãs que já tínhamos desenhado, o que tornou a perceção do questionário muito mais clara e direta.
+
+> **Prompt (Comando):** "Já temos os alertas automáticos criados no nosso protótipo, mas atualmente eles abrem numa página nova. Como podemos melhorar isto no Figma para que a interação seja mais simples e rápida?"
+> 
+> **Resposta da IA (Excerto):** "Em vez de obrigarem o utilizador a mudar de página, ajustem o protótipo para que a mensagem de alerta apareça no mesmo ecrã, logo após o clique na resposta. Isto evita que o utilizador se perca e torna a navegação mais eficiente."
+> 
+> **Ajuste realizado:** Aplicámos esta dica para melhorar o nosso protótipo. Ajustámos as interações no Figma para que os alertas surjam no próprio ecrã da pergunta, tornando a utilização da aplicação muito mais fluida.
+
+> **Prompt (Comando):** "No último ecrã, já temos os contactos de apoio do SNS 24 e da U.Porto. Como podemos otimizar o desenho destes botões para que o processo de pedir ajuda seja o mais eficiente possível num telemóvel?"
+> 
+> **Resposta da IA (Excerto):** "Aumentem o tamanho dos botões para ocuparem quase toda a largura do ecrã, facilitando o toque. Para garantir a máxima eficiência, configurem a interação para que o clique abra diretamente o teclado de chamadas do telemóvel."
+> 
+> **Ajuste realizado:** Aumentámos os botões que já tínhamos criado para serem mais fáceis de clicar. No Figma, melhorámos a interação do botão do SNS 24 para abrir logo a opção de chamada, eliminando passos intermédios e tornando o pedido de ajuda imediato.
