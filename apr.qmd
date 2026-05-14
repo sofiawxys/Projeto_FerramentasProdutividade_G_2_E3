@@ -6,10 +6,10 @@ title: "Apresentação"
 
 Nesta página, encontram-se os materiais de apresentação do estudo (slides e um vídeo de demonstração do protótipo da App MindMove).
 
-## Slides de apresentação do estudo
+### Slides de apresentação do estudo
 
 <iframe src="apresentacao.pdf" width="100%" height="500px" style="border: none;"></iframe>
 
-## Vídeo de demonstração do protótipo da App MindMove
+### Vídeo de demonstração do protótipo da App MindMove
 
 {{< video https://youtu.be/cAeMl6o3SJE >}}
