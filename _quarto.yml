@@ -18,8 +18,8 @@ website:
         text: Equipa
       - href: ia.qmd
         text: Documentação de IA
-      - href: Apresentação
-        text: apr.qmd
+      - href: apr.qmd
+        text: Apresentação
       - about.qmd
 
 format:
